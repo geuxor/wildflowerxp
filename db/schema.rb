@@ -10,10 +10,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_08_162252) do
+ActiveRecord::Schema.define(version: 2021_03_08_171120) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "bookings", force: :cascade do |t|
+    t.integer "status"
+    t.integer "nr_of_people"
+    t.date "start_date"
+    t.date "end_date"
+    t.integer "total_price"
+    t.bigint "user_id", null: false
+    t.bigint "experience_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["experience_id"], name: "index_bookings_on_experience_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
+  end
+
+  create_table "experiences", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "location"
+    t.integer "price"
+    t.string "activity"
+    t.integer "max_guests"
+    t.string "meeting_point"
+    t.text "policies"
+    t.integer "activity_effort"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_experiences_on_user_id"
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.text "content"
+    t.integer "rating"
+    t.bigint "booking_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["booking_id"], name: "index_reviews_on_booking_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -29,4 +68,8 @@ ActiveRecord::Schema.define(version: 2021_03_08_162252) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "bookings", "experiences"
+  add_foreign_key "bookings", "users"
+  add_foreign_key "experiences", "users"
+  add_foreign_key "reviews", "bookings"
 end
