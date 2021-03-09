@@ -8,6 +8,6 @@
   <%= f.input :meeting_point, label: "Meeting Point" %>
   <%= f.input :policies, label: "Policies" %>
   <%= f.input :activity_effort, as: :select, collection: Experience::ACTIVITY_EFFORTS, prompt: 'Select Activity Effort', label: false  %>
-  
+  <%= f.input :photo, as: :file %>
   <%= f.submit "Add my Experience",  class: 'btn btn-warning mb-5' %>
 <% end %>

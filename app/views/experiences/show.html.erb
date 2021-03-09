@@ -1,17 +1,18 @@
-<div class="img" style="background-image: url('<%= @experience %>')"></div>
-
 <div class="container margin-top-negative">
   <div class="row">
     <div class="col-8">
-      <div class="experience-show-card">
+      <div class="">
         <h1><%= @experience.title %></h1>
         <p class="experience-show-loc"><%= @experience.location %></p>
+          <div class="experience-show-card">
+            <%= cl_image_tag @experience.photo.key, height: 300, width: 400, crop: :fill %>        
+          </div>
       </div>
       <div class="experience-show-card">
         <h3>A bit more about this experience...</h3>
         <p><%= @experience.description %></p>
         <div class="map" style="background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=<%= @experience %>&zoom=13&scale=2&size=1000x1000&maptype=roadmap&markers=color:red%7C<%= @experience %>&key=AIzaSyBtaHK-BLhBg7TruJu8iKk_wETqZMJM-GY')"></div>
-      </div>
+        </div>
       <div class="experience-show-card">
         <h1><%= @experience.price %>.- EUR</h1>
         <p class="experience-show-loc">price per person</p>

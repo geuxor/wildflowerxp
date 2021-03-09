@@ -1,6 +1,7 @@
 class Experience < ApplicationRecord
   ACTIVITIES = %w( Sport Art Nature Music Food Wild )
   ACTIVITY_EFFORTS = (1..5)
+  has_one_attached :photo
   belongs_to :user
   has_many :bookings
   has_many :reviews, through: :bookings
@@ -9,6 +10,5 @@ class Experience < ApplicationRecord
   validates :price, :max_guests, numericality: true
   validates :activity, inclusion: { in: ACTIVITIES }
   validates :activity_effort, inclusion: { in: ACTIVITY_EFFORTS }
-  has_one_attached :photo
 end
 
