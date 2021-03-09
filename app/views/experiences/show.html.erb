@@ -1,0 +1,65 @@
+<div class="img" style="background-image: url('<%= @experience %>')"></div>
+
+<div class="container margin-top-negative">
+  <div class="row">
+    <div class="col-8">
+      <div class="experience-show-card">
+        <h1><%= @experience.title %></h1>
+        <p class="experience-show-loc"><%= @experience.location %></p>
+      </div>
+      <div class="experience-show-card">
+        <h3>A bit more about this experience...</h3>
+        <p><%= @experience.description %></p>
+        <div class="map" style="background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=<%= @experience %>&zoom=13&scale=2&size=1000x1000&maptype=roadmap&markers=color:red%7C<%= @experience %>&key=AIzaSyBtaHK-BLhBg7TruJu8iKk_wETqZMJM-GY')"></div>
+      </div>
+      <div class="experience-show-card">
+        <h1><%= @experience.price %>.- EUR</h1>
+        <p class="experience-show-loc">price per person</p>
+      </div>
+
+    </div>
+
+    <div class="col-4">
+      <div class="experience-show-card">
+        <h5>Book this Experience!</h5>
+
+        <form action="">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">From:</span>
+            <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mt-2">
+            <span class="input-group-addon" id="basic-addon1">To:</span>
+            <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mt-2">
+            <span class="input-group-addon" id="basic-addon1">Number of Guests:</span>
+            <input type="select" class="form-control" placeholder="<%= (1..@experience.max_guests) %>" aria-describedby="basic-addon1">
+          </div>
+
+          <input type="submit" value="Book" class="btn btn-success mt-2" style="width: 100%">
+        </form>
+      </div>
+      <div class="experience-show-card">
+        <h3>Policy</h3>
+        <div class="flex">
+          <div class="flex ml-3">
+            <i class="material-icons mr-2">euro_symbol</i> <%= @experience.policies %>
+          </div>
+        </div>
+      </div>
+      <div class="experience-show-card">
+        <div class="flex-align">
+          <h6 class="no-mb">Share</h6>
+
+          <div class="flex">
+            <i class="fab fa-facebook-square fa-2x mr-2"></i>
+            <i class="fab fa-twitter-square fa-2x mr-2"></i>
+            <i class="fab fa-pinterest-square fa-2x mr-2"></i>
+            <i class="fa fa-envelope fa-2x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
