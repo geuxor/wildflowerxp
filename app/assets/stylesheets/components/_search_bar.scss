@@ -1,0 +1,22 @@
+.search-input {
+  background-color: white;
+  padding: 25px;
+  border-radius: 32px;
+}
+
+.search-input label {
+  color: black;
+}
+
+.search-input input {
+  border: none;
+}
+
+.btn.search {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid red;
+  background: red;
+  font-family: "Font Awesome 5 Free";
+}
