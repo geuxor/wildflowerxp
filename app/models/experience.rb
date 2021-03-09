@@ -9,4 +9,6 @@ class Experience < ApplicationRecord
   validates :price, :max_guests, numericality: true
   validates :activity, inclusion: { in: ACTIVITIES }
   validates :activity_effort, inclusion: { in: ACTIVITY_EFFORTS }
+  has_one_attached :photo
 end
+
