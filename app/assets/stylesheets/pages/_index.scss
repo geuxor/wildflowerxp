@@ -1,2 +1,13 @@
 // Import page-specific CSS files here.
 @import "home";
+
+#filter {
+  padding-bottom: 16px;
+}
+#filter h2 {
+  font-size:medium;
+}
+
+#filter h3 {
+  font-size:small;
+}

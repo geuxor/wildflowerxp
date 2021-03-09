@@ -1,0 +1,33 @@
+<div class="banner" style="background-image: url(https://images.unsplash.com/photo-1523287281576-5b596107a6ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);">
+  <div class="banner-content">
+    <p>What do you want to do?</p>
+  <!-- <a class="btn btn-secondary my-5" href="/cocktails/new">Add a new cocktail</a> -->
+  </div>
+</div>
+
+<div class="container" id="filter">
+  <h2>Your filters:</h2>
+  <h3>Location: Barcelona || Start date 03/03/2021 || Category: Sport </h3>
+</div>
+
+<div class="cards-map">
+  <div class="cards px-3">
+    <% @experiences.each do |experience| %>
+      <div class="card-trip">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <div class="card-trip-infos">
+          <div>
+            <h2><%= experience.title %></h2>
+            <p>Short description here! <%= experience.description %></p>
+            <%= link_to 'Discover more', experience %>
+          </div>
+          <h2 class="card-trip-pricing">€<%= experience.price %></h2>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  
+ 
+    <img id="map" src='https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/2.3381,48.8693,10.45,0,0/600x1000?access_token=pk.eyJ1IjoicG9wcHlqZW5uaW5ncyIsImEiOiJja2xjZGdjdXIxZXJ1Mm9sYm0ycGRyNjJvIn0.L3m2Fuc9wxwHdOgZ6lLUkw'>
+</div>
+

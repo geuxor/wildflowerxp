@@ -1,6 +1,10 @@
-class ExperiencesController < ApplicationController
+class ExperiencesController < ApplicationController  
   before_action :set_experience, only: [:show]
 
+  def index
+    @experiences = Experience.all
+  end
+  
   def new
     @experience = Experience.new
   end
