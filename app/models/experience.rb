@@ -11,5 +11,7 @@ class Experience < ApplicationRecord
   validates :price, :max_guests, numericality: true
   validates :activity, inclusion: { in: ACTIVITIES }
   validates :activity_effort, inclusion: { in: ACTIVITY_EFFORTS }
-  
+
+  geocoded_by :location
+  after_validation :geocode, if: :will_save_change_to_location?
 end

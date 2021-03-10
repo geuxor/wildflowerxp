@@ -5,49 +5,54 @@
 
   <form class="search-input" action="/experiences">
     <label for="location">Location</label>
-    <input id="location" type="text" name="location" placeholder="Where are you going?">
-    <label for="start-date">Start date</label>
+    <input id="location" type="text" name="location" placeholder="Barcelona">
+    <label for="start-date">Start-Date</label>
     <input id="start-date" type="text" name="start-date" placeholder="<%= Date.today.strftime('%F') %>">
     <label for="end-date">End-Date</label>
     <input id="end-date" type="text" name="end-date" placeholder="<%= (Date.today + 3).strftime('%F') %>">
-    <input type="submit" value="&#xf002" href="/experiences" class="btn search">
+    <button class="btn search" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+
   </form>
 
 </div>
 
-<div class="container w-70 mt-5 text-center">
-  <div class="cards">
+<div class="container w-70 mt-5">
+      <h2>Experience the world</h2>
+      <h5>Unique activities with local experts—in person or online.</h5>
+  <div class="cards px-0">
         <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=708&q=80);">
           <div class="card-description">
-            <h2>Nature</h2>
+          <a href="/experiences">Nature</a>
           </div>
         </div>
         <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1589704379319-3b83010f661e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=358&q=80);">
             <div class="card-description">
-              <h2>Food</h2>
+            <a href="/experiences">Food</a>
             </div>
         </div>
 
         <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1593288926498-e756f7705db2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
             <div class="card-description">
-              <h2>Music</h2>
+              <a href="/experiences">Music</a>
             </div>
         </div>
 
         <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1593288926498-e756f7705db2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
             <div class="card-description">
-              <h2>Art</h2>
+              <a href="/experiences">Art</a>
             </div>
         </div>
           <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1465310477141-6fb93167a273?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDJ8fHNwb3J0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
             <div class="card-description">
-              <h2>Sport</h2>
+              <a href="/experiences">Sport</a>
             </div>
         </div>
 
         <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1453473552141-5eb1510d09e2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHdpbGR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
             <div class="card-description">
-              <h2>Wild</h2>
+              <a href="/experiences">Wild</a>
             </div>
         </div>
 
