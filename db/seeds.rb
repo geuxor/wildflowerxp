@@ -6,9 +6,9 @@ user1 = User.create!(first_name: "pepe", last_name: "sanche", email: "a@a.aaa", 
 user2 = User.create!(first_name: "john", last_name: "doe", email: "b@a.aaa", password: "password")
 
 exp1 = Experience.create!(
-title: "example",
-description: "example1",
-location: "example",
+title: "hiking",
+description: "description text here",
+location: "Barcelona, Spain",
 price: 123,
  activity: "Sport",
  max_guests: 4,
@@ -21,7 +21,7 @@ price: 123,
 exp2 = Experience.create!(
 title: "KayakingwithPoppy",
 description: "KayakingwithPoppy1",
-location: "Bcn",
+location: "Madrid",
 price: 123,
  activity: "Nature",
  max_guests: 4,
