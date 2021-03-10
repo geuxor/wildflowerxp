@@ -1,13 +1,23 @@
 <%= simple_form_for @experience do |f| %>
-  <%= f.input :title, label: "Title" %>
-  <%= f.input :description, label: "Description" %>
-  <%= f.input :location, label: "Location" %>
-  <%= f.input :price, label: "Price" %>
-  <%= f.input :activity, as: :select, collection: Experience::ACTIVITIES, prompt: 'Select Activity Type', label: false  %>
-  <%= f.input :max_guests, label: "Max nr. of Guests" %>
-  <%= f.input :meeting_point, label: "Meeting Point" %>
-  <%= f.input :policies, label: "Policies" %>
-  <%= f.input :activity_effort, as: :select, collection: Experience::ACTIVITY_EFFORTS, prompt: 'Select Activity Effort', label: false  %>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit "Add my Experience",  class: 'btn btn-warning mb-5' %>
+  <%= f.input :title, label: "Title", :label_html => { :class => 'form_title' } %>
+  <%= f.input :description, label: "Description", :label_html => { :class => 'form_title' } %>
+  <%= f.input :location, label: "Location", :label_html => { :class => 'form_title' } %>
+  <%= f.input :meeting_point, label: "Meeting Point", :label_html => { :class => 'form_title' } %>
+  <%= f.input :price, label: "Price", :label_html => { :class => 'form_title' }  %>
+  <%= f.input :activity,
+            as: :radio_buttons,
+            label_html: { class: "form_title" },
+            item_wrapper_class: "tag-item",
+            input_html: { class: "tag-selector" },
+            collection: Experience::ACTIVITIES %>
+  <%= f.input :max_guests, label: "Max nr. of Guests", :label_html => { :class => 'form_title' } %>
+  <%= f.input :activity_effort,
+            as: :radio_buttons,
+            label_html: { class: "form_title" },
+            item_wrapper_class: "tag-item",
+            input_html: { class: "tag-selector" },
+            collection: Experience::ACTIVITY_EFFORTS %>
+  <%= f.input :photo, as: :file, :label_html => { :class => 'form_title' } %>
+  <%= f.input :policies, label: "Policies", :label_html => { :class => 'form_title' } %>
+  <%= f.submit "Add my Experience", class: 'btn btn-warning mb-5' %>
 <% end %>
