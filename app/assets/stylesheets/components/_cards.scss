@@ -47,14 +47,17 @@
 
 .card-trip {
   overflow: hidden;
-  background: white;
+  // background: white;
+  border-radius: 6px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .card-trip > img {
-  height: 200px;
+  height: 250px;
   width: 100%;
   object-fit: cover;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .card-trip h2 {
@@ -70,7 +73,8 @@
 }
 
 .card-trip a {
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: bold;
   opacity: .7;
   margin: 0;
 }
