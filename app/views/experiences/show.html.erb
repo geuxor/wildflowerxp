@@ -1,66 +1,51 @@
-<div class="container margin-top-negative">
-  <div class="row">
-    <div class="col-8">
-      <div class="">
-        <h1><%= @experience.title %></h1>
-        <p class="experience-show-loc"><%= @experience.location %></p>
-          <div class="experience-show-card">
-            <%= cl_image_tag @experience.photo.key, height: 300, width: 400, crop: :fill %>        
-          </div>
-      </div>
-      <div class="experience-show-card">
-        <h3>A bit more about this experience...</h3>
-        <p><%= @experience.description %></p>
-        <div class="map" style="background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=<%= @experience %>&zoom=13&scale=2&size=1000x1000&maptype=roadmap&markers=color:red%7C<%= @experience %>&key=AIzaSyBtaHK-BLhBg7TruJu8iKk_wETqZMJM-GY')"></div>
-        </div>
-      <div class="experience-show-card">
-        <h1><%= @experience.price %>.- EUR</h1>
-        <p class="experience-show-loc">price per person</p>
-      </div>
+<div class="banner" style="background-image: url(https://images.unsplash.com/photo-1527786356703-4b100091cd2c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80);">
+  <div class="banner-content">
+  </div>
+</div>
 
+<div class="container">
+  <div class="row my-3">
+    <div class="col-8 align-items-start d-flex py-3">
+      <h1 class="m-0"><%= @experience.title %></h1>
     </div>
 
-    <div class="col-4">
-      <div class="experience-show-card">
-        <h5>Book this Experience!</h5>
+    <div class="col-4 align-items-start d-flex py-3">
+      <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
 
-        <form action="">
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">From:</span>
-            <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
-          </div>
-          <div class="input-group mt-2">
-            <span class="input-group-addon" id="basic-addon1">To:</span>
-            <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
-          </div>
-          <div class="input-group mt-2">
-            <span class="input-group-addon" id="basic-addon1">Number of Guests:</span>
-            <input type="select" class="form-control" placeholder="<%= (1..@experience.max_guests) %>" aria-describedby="basic-addon1">
-          </div>
+  </div>
+<div class="row my-3">
+  <div class="col-8 py-4">
+      <h3>A bit more about this experience...</h3>
+      <p><%= @experience.description %>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quam assumenda similique eveniet accusantium a vel, rerum repellendus sapiente beatae, saepe animi magni quidem temporibus, asperiores veritatis debitis nihil fugiat.</p>
+      <h3>Policies</h3>
+      <p><%= @experience.policies %>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quam assumenda similique eveniet accusantium a vel, rerum repellendus sapiente beatae, saepe animi magni quidem temporibus, asperiores veritatis debitis nihil fugiat.</p>
+  </div>
+  <div class="col-4 py-4">
+    <div class="experience-show-card">
+      <h4>Book this Experience</h4>
 
-          <input type="submit" value="Book" class="btn btn-success mt-2" style="width: 100%">
-        </form>
-      </div>
-      <div class="experience-show-card">
-        <h3>Policy</h3>
-        <div class="flex">
-          <div class="flex ml-3">
-            <i class="material-icons mr-2">euro_symbol</i> <%= @experience.policies %>
-          </div>
+      <form class="price-input">
+        <h4>$<%= @experience.price %> per day</h4>
+        <div class="form-group">
+          <span class="input-group-addon" id="basic-addon1">From</span>
+          <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
         </div>
-      </div>
-      <div class="experience-show-card">
-        <div class="flex-align">
-          <h6 class="no-mb">Share</h6>
-
-          <div class="flex">
-            <i class="fab fa-facebook-square fa-2x mr-2"></i>
-            <i class="fab fa-twitter-square fa-2x mr-2"></i>
-            <i class="fab fa-pinterest-square fa-2x mr-2"></i>
-            <i class="fa fa-envelope fa-2x"></i>
-          </div>
+        <div class="form-group">
+          <span class="input-group-addon" id="basic-addon1">To</span>
+          <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
         </div>
-      </div>
+        <div class="form-group">
+          <span class="input-group-addon" id="basic-addon1">Number of Guests</span>
+          <input type="select" class="form-control" placeholder="<%= (1..@experience.max_guests) %>" aria-describedby="basic-addon1">
+        </div>
+
+        <input type="submit" value="Book" class="btn btn-danger mt-2 btn-block">
+      </form>
     </div>
   </div>
 </div>
+
+</div>
+
+
