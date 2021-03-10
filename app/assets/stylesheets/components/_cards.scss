@@ -14,14 +14,16 @@
   background-position: center;
   color: white;
   position: relative;
+  border-radius: 5px;
 }
 .card-description {
   position: absolute;
   bottom: 10px;
   left: 10px;
 }
-.card-description h2 {
+.card-description a {
   font-size: 24px;
+  color: white;
 }
 .card-link {
   position: absolute;
