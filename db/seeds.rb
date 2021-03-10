@@ -7,7 +7,6 @@ User.destroy_all
 user1 = User.create!(first_name: "pepe", last_name: "sanche", email: "a@a.aaa", password: "password")
 user2 = User.create!(first_name: "john", last_name: "doe", email: "b@a.aaa", password: "password")
 
-
 # NATURE
 file1 = URI.open('https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500')
 exp1 = Experience.new(
