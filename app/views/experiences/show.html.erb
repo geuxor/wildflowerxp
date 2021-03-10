@@ -1,50 +1,68 @@
-<div class="banner" style="background-image: url(https://images.unsplash.com/photo-1527786356703-4b100091cd2c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80);">
-  <div class="banner-content">
-  </div>
+<div class="banner-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @experience.photo.key, height: 300, crop: :fill %>')">
+  <h1>
+    <%= @experience.title %>
+  </h1>
+  <h3><%= @experience.activity %></h3>
+  <p><%= @experience.description[0,128] %>...</p>
 </div>
 
 <div class="container">
+
   <div class="row my-3">
-    <div class="col-8 align-items-start d-flex py-3">
-      <h1 class="m-0"><%= @experience.title %></h1>
+
+    <div class="col-8 align-items-start d-flex py-3 flex-column">
+      <div class="py-3"><h3>A bit more about this experience...</h3></div>
+      <div><p><%= @experience.description %></p></div>
+      <div class="py-4">
+        <h3>Policies</h3>
+        <%= @experience.policies %>
+      </div>
+
+
     </div>
 
-    <div class="col-4 align-items-start d-flex py-3">
-      <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="col-4">
+      <div class="xp-booking-details">
+        <div class="my-0"><b>Price per person: € <%= @experience.price %> per day</b></div>
+        <div class="my-0"><b>Number of people: <%= @experience.max_guests %></b></div>
+        <form class="price-input">
+          <div class="form-group">
+            <span class="input-group-addon" id="basic-addon1">From</span>
+            <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
+          </div>
+          <div class="form-group">
+            <span class="input-group-addon" id="basic-addon1">To</span>
+            <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
+          </div>
+          <div class="form-group">
+            <span class="input-group-addon" id="basic-addon1">Number of Guests (max. <%= @experience.max_guests %> )</span>
+            <input type="select" class="form-control" placeholder="<%= (1..@experience.max_guests) %>" aria-describedby="basic-addon1">
+          </div>
+          <input type="submit" value="Book Now" class="my-2 btn btn-warning block btn-block rounded-pill">
+        </form>
+      </div>
     </div>
 
   </div>
-<div class="row my-3">
-  <div class="col-8 py-4">
-      <h3>A bit more about this experience...</h3>
-      <p><%= @experience.description %>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quam assumenda similique eveniet accusantium a vel, rerum repellendus sapiente beatae, saepe animi magni quidem temporibus, asperiores veritatis debitis nihil fugiat.</p>
-      <h3>Policies</h3>
-      <p><%= @experience.policies %>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quam assumenda similique eveniet accusantium a vel, rerum repellendus sapiente beatae, saepe animi magni quidem temporibus, asperiores veritatis debitis nihil fugiat.</p>
-  </div>
-  <div class="col-4 py-4">
-    <div class="experience-show-card">
-      <h4>Book this Experience</h4>
 
-      <form class="price-input">
-        <h4>$<%= @experience.price %> per day</h4>
-        <div class="form-group">
-          <span class="input-group-addon" id="basic-addon1">From</span>
-          <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
-        </div>
-        <div class="form-group">
-          <span class="input-group-addon" id="basic-addon1">To</span>
-          <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
-        </div>
-        <div class="form-group">
-          <span class="input-group-addon" id="basic-addon1">Number of Guests</span>
-          <input type="select" class="form-control" placeholder="<%= (1..@experience.max_guests) %>" aria-describedby="basic-addon1">
-        </div>
+  <div class="row my-3">
 
-        <input type="submit" value="Book" class="btn btn-danger mt-2 btn-block">
-      </form>
+    <div class="col-8 py-4">
+      <div py-4">
+        <h3>Location info</h3>
+        <h4>Meeting info</h4>
+        <%= @experience.meeting_point %>
+        <br><br><br>
+        LAT: <%= @experience.latitude %>
+        LON: <%= @experience.longitude %>
+      </div>
     </div>
+
+    <div class="col-4 py-2">
+    Last updated on: <%= @experience.updated_at %>
+    </div>
+
   </div>
-</div>
 
 </div>
 
