@@ -1,23 +1,51 @@
 <%= simple_form_for @experience do |f| %>
   <%= f.input :title, label: "Title", :label_html => { :class => 'form_title' } %>
   <%= f.input :description, label: "Description", :label_html => { :class => 'form_title' } %>
-  <%= f.input :location, label: "Location", :label_html => { :class => 'form_title' } %>
-  <%= f.input :meeting_point, label: "Meeting Point", :label_html => { :class => 'form_title' } %>
-  <%= f.input :price, label: "Price", :label_html => { :class => 'form_title' }  %>
-  <%= f.input :activity,
+
+  <form>
+    <div class="row">
+      <div class="col">
+        <%= f.input :location, label: "Location", :label_html => { :class => 'form_title' } %>
+      </div>
+      <div class="col">
+        <%= f.input :meeting_point, label: "Meeting Point", :label_html => { :class => 'form_title' } %>
+        <p>more info about where to meet</p>
+      </div>
+    </div>
+  </form>
+  
+  <form>
+    <div class="row">
+      <div class="col">
+        <%= f.input :activity,
             as: :radio_buttons,
             label_html: { class: "form_title" },
             item_wrapper_class: "tag-item",
             input_html: { class: "tag-selector" },
             collection: Experience::ACTIVITIES %>
-  <%= f.input :max_guests, label: "Max nr. of Guests", :label_html => { :class => 'form_title' } %>
-  <%= f.input :activity_effort,
+      </div>
+      <div class="col">
+        <%= f.input :activity_effort,
             as: :radio_buttons,
             label_html: { class: "form_title" },
             item_wrapper_class: "tag-item",
             input_html: { class: "tag-selector" },
             collection: Experience::ACTIVITY_EFFORTS %>
+      </div>
+    </div>
+  </form>
+  <form>
+    <div class="row">
+      <div class="col">
+        <%= f.input :price, label: "Price", :label_html => { :class => 'form_title' }  %>
+      </div>
+      <div class="col">
+        <%= f.input :max_guests, label: "Max nr. of Guests", :label_html => { :class => 'form_title' } %>
+      </div>
+    </div>
+  </form>
+
   <%= f.input :photo, as: :file, :label_html => { :class => 'form_title' } %>
   <%= f.input :policies, label: "Policies", :label_html => { :class => 'form_title' } %>
-  <%= f.submit "Add my Experience", class: 'btn btn-warning mb-5' %>
+  <%= f.submit "Add my Experience", class: 'btn btn-warning btn-lg btn-block mb-5' %>
 <% end %>
