@@ -30,7 +30,13 @@
   <div class="cards px-3">
     <% @experiences.each do |experience| %>
       <div class="card-trip">
+
+      <% if experience.photo.attached? %>
         <%= cl_image_tag experience.photo.key %>
+      <% else %>
+        <%= cl_image_tag 'https://res.cloudinary.com/geuxor/image/upload/v1615476947/Broken-glass_dcb4ee.jpg', height: 300, width: 400, crop: :fill %>
+      <% end %>
+
 
         <div class="card-trip-infos">
           <div>
