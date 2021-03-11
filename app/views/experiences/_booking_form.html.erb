@@ -3,11 +3,8 @@
 
 
       <form class="price-input">
-        <div class="form-group">
-          <span class="input-group-addon" id="basic-addon1">Number of Guests (max. <%= @experience.max_guests %> )</span>
-        </div>
         <%= simple_form_for [@experience, @booking] do |f| %>
-          <%= f.input :nr_of_people, label: "Nr. of Guests", input_html: { min: 1, max: @experience.max_guests } %>
+          <%= f.input :nr_of_people, label: "Nr. of Guests (max. #{@experience.max_guests})", input_html: { min: 1, max: @experience.max_guests } %>
           <%= f.input :start_date, as: :string, input_html: {class: "datepicker"} %>
           <%= f.input :end_date, as: :string, required: false, input_html: {class: "datepicker"} %>
           <p>TODO total_price</p>
