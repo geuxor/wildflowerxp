@@ -24,22 +24,8 @@
     <div class="col-4">
       <div class="xp-booking-details">
         <div class="my-0"><b>Price per person: € <%= @experience.price %> per day</b></div>
-        <div class="my-0"><b>Number of people: <%= @experience.max_guests %></b></div>
-        <form class="price-input">
-          <div class="form-group">
-            <span class="input-group-addon" id="basic-addon1">From</span>
-            <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
-          </div>
-          <div class="form-group">
-            <span class="input-group-addon" id="basic-addon1">To</span>
-            <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
-          </div>
-          <div class="form-group">
-            <span class="input-group-addon" id="basic-addon1">Number of Guests (max. <%= @experience.max_guests %> )</span>
-            <input type="select" class="form-control" placeholder="<%= (1..@experience.max_guests) %>" aria-describedby="basic-addon1">
-          </div>
-          <input type="submit" value="Book Now" class="my-2 btn btn-warning block btn-block rounded-pill">
-        </form>
+        <div class="my-0"><b>Max Number of people: <%= @experience.max_guests %></b></div>
+         <%= render 'booking_form', experience: @experience %>
       </div>
     </div>
 
