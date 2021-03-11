@@ -17,7 +17,7 @@ price: 79,
  activity: "Nature",
  max_guests: 4,
  meeting_point: "169 - Avda. Litoral 40, Avinguda del Litoral, la Vila Olímpica del Poblenou, Sant Martí, Barcelona, Barcelonés, Barcelona, Cataluña, 08001, España",
- policies: "Please don't feed wild animals and lead your way alone. Stick to the group.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
