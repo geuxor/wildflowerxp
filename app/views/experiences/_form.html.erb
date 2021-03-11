@@ -1,14 +1,13 @@
 <%= simple_form_for @experience do |f| %>
-  <%= f.input :title, label: "Title", :label_html => { :class => 'form_title' } %>
-  <%= f.input :description, label: "Description", :label_html => { :class => 'form_title' } %>
+  <%= f.input :title, label: "Title", placeholder: "specify a short title", :label_html => { :class => 'form_title' } %>
+  <%= f.input :description, label: "Description", placeholder: "specify a description that explains your wild activity in details", :label_html => { :class => 'form_title' } %>
 
     <div class="row">
       <div class="col">
-        <%= f.input :location, label: "Location", :label_html => { :class => 'form_title' } %>
+        <%= f.input :location, label: "Location", placeholder: "The location for the experience",:label_html => { :class => 'form_title' } %>
       </div>
       <div class="col">
-        <%= f.input :meeting_point, label: "Meeting Point", :label_html => { :class => 'form_title' } %>
-        <p>more info about where to meet</p>
+        <%= f.input :meeting_point, label: "Meeting Point", placeholder: "more info about where to meet", :label_html => { :class => 'form_title' } %>
       </div>
     </div>
 
@@ -32,21 +31,18 @@
     </div>
     <div class="row">
       <div class="col">
-        <%= f.input :price, label: "Price", :label_html => { :class => 'form_title' }  %>
+        <%= f.input :price, label: "Price", placeholder: "per person, per day",:label_html => { :class => 'form_title' }  %>
       </div>
       <div class="col">
         <%= f.input :max_guests, label: "Max nr. of Guests", :label_html => { :class => 'form_title' } %>
       </div>
     </div>
-    <label class="btn btn-primary">
+    <label class="btn btn-primary rounded-pill px-4 shadow">
       Upload your photos!
       <span style="display:none;">
         <%= f.input :photo, as: :file, required: true, multiple: true, :label_html => { :class => 'form_title' } %>
       </span>
     </label>
-    <%= f.input :policies, label: "Policies", :label_html => { :class => 'form_title' } %>
-
-
-  
-  <%= f.button :submit, "Add my Experience", class: "btn btn-warning btn-lg btn-block rounded-pill mb-5" %>
+    <%= f.input :policies, label: "Policies",  placeholder: "outlines the guidelines and requirements when booking this experience, whats included as well as the refund policy", :label_html => { :class => 'form_title' } %>
+  <%= f.button :submit, "Add my Experience", class: "btn btn-warning btn-lg btn-block rounded-pill mb-5 shadow" %>
 <% end %>

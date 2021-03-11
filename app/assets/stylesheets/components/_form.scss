@@ -4,13 +4,19 @@
 }
 
 .form-right {
-/*background-image: url("https://res.cloudinary.com/geuxor/image/upload/v1615390682/create_form_ztadzu.png");*/
-height: 100vh;
+background-image: url("https://res.cloudinary.com/geuxor/image/upload/v1615390682/create_form_ztadzu.png");
+height: 90vh;
+width: 36vw;
 text-align: start;
 justify-content: start;
 align-content: flex-start;
 margin-top: 88px;
-border-radius: 3%;
+border-radius: 8px;
+background-size: cover;
+position: sticky;
+top: 0;
+box-shadow: 2px 2px 15px black;
+
 }
 
 .location-icon {
