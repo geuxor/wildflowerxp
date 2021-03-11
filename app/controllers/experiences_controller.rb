@@ -1,4 +1,4 @@
-class ExperiencesController < ApplicationController  
+class ExperiencesController < ApplicationController
   before_action :set_experience, only: [:show]
 
   def index
@@ -10,14 +10,16 @@ class ExperiencesController < ApplicationController
       }
     end
   end
-  
+
   def new
     @experience = Experience.new
   end
 
   def show
+    @experiences = Experience.all
+    @markers = [{lat: @experience.latitude, lng: @experience.longitude}]
   end
-  
+
   def set_experience
     @experience = Experience.find(params[:id])
   end
@@ -31,7 +33,7 @@ class ExperiencesController < ApplicationController
       render :new
     end
   end
-  
+
   def experience_params
     params.require(:experience).permit(:title, :description, :location, :price, :activity, :max_guests, :meeting_point, :policies, :activity_effort, :photo)
   end

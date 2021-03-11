@@ -1,8 +1,5 @@
 <div class="banner-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @experience.photo.key, height: 300, crop: :fill %>')">
-  <h1>
-    <%= @experience.title %>
-  </h1>
-  <h3><%= @experience.activity %></h3>
+  <h1><%= @experience.title %></h1>
   <p><%= @experience.description[0,128] %>...</p>
 </div>
 
@@ -10,57 +7,75 @@
 
   <div class="row my-3">
 
-    <div class="col-8 align-items-start d-flex py-3 flex-column">
+    <div class="col-4 align-items-start d-flex py-3 flex-column">
       <div class="py-3"><h3>A bit more about this experience...</h3></div>
       <div><p><%= @experience.description %></p></div>
       <div class="py-4">
         <h3>Policies</h3>
         <%= @experience.policies %>
       </div>
-
-
-    </div>
-
-    <div class="col-4">
-      <div class="xp-booking-details">
-        <div class="my-0"><b>Price per person: € <%= @experience.price %> per day</b></div>
-        <div class="my-0"><b>Number of people: <%= @experience.max_guests %></b></div>
-        <form class="price-input">
-          <div class="form-group">
-            <span class="input-group-addon" id="basic-addon1">From</span>
-            <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
-          </div>
-          <div class="form-group">
-            <span class="input-group-addon" id="basic-addon1">To</span>
-            <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
-          </div>
-          <div class="form-group">
-            <span class="input-group-addon" id="basic-addon1">Number of Guests (max. <%= @experience.max_guests %> )</span>
-            <input type="select" class="form-control" placeholder="<%= (1..@experience.max_guests) %>" aria-describedby="basic-addon1">
-          </div>
-          <input type="submit" value="Book Now" class="my-2 btn btn-warning block btn-block rounded-pill">
-        </form>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="row my-3">
-
-    <div class="col-8 py-4">
-      <div py-4">
+      <div class="py-4">
         <h3>Location info</h3>
         <h4>Meeting info</h4>
         <%= @experience.meeting_point %>
         <br><br><br>
-        LAT: <%= @experience.latitude %>
-        LON: <%= @experience.longitude %>
       </div>
+
     </div>
 
-    <div class="col-4 py-2">
-    Last updated on: <%= @experience.updated_at %>
+    <div class="col-4">
+
+      <form class="price-input">
+        <div class="my-0"><b>Price per person: € <%= @experience.price %> per day</b></div>
+        <div class="my-0"><b>Number of people: <%= @experience.max_guests %></b></div>
+        <div class="form-group">
+          <span class="input-group-addon" id="basic-addon1">From</span>
+          <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
+        </div>
+        <div class="form-group">
+          <span class="input-group-addon" id="basic-addon1">To</span>
+          <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
+        </div>
+        <div class="form-group">
+          <span class="input-group-addon" id="basic-addon1">Number of Guests (max. <%= @experience.max_guests %> )</span>
+          <input type="select" class="form-control" placeholder="<%= (1..@experience.max_guests) %>" aria-describedby="basic-addon1">
+        </div>
+        <input type="submit" value="Book Now" class="my-2 btn btn-warning block btn-block rounded-pill">
+
+        </form>
+      </div>
+
+      <div id="map" src='https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/2.3381,48.8693,10.45,0,0/600x1000?access_token=pk.eyJ1IjoicG9wcHlqZW5uaW5ncyIsImEiOiJja2xjZGdjdXIxZXJ1Mm9sYm0ycGRyNjJvIn0.L3m2Fuc9wxwHdOgZ6lLUkw' style="width: 100%; height: 50vh;" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
     </div>
+
+      <div class="cards-map">
+        <div class="cards px-3">
+          <% @experiences.each do |experience| %>
+            <div class="card-trip">
+              <%= cl_image_tag experience.photo.key %>
+
+              <div class="card-trip-infos">
+                <div>
+                  <h2><%= link_to experience.title, experience %></h2>
+                  <p>Short description here! <%= experience.description.slice(0..30) %></p>
+                </div>
+                <p class="card-trip-pricing">€<%= experience.price %></p>
+              </div>
+            </div>
+          <% end %>
+        </div>
+
+    </div>
+
+
+
+
+  </div>
+
+
+<!--     <div class="col-4 py-2">
+    Last updated on: <%= @experience.updated_at %>
+    </div> -->
 
   </div>
 
