@@ -37,7 +37,10 @@
         <%= f.input :max_guests, label: "Max nr. of Guests", :label_html => { :class => 'form_title' } %>
       </div>
     </div>
-    <%= f.input :photo, required: true, input_html: { class: 'd-none' }, label_html: { class: 'upload-photo'}, label: '📷 Upload a photo' %>
+    <div class="d-flex justify-content-between">
+      <%= f.input :photo, input_html: { class: 'hidden', id: 'photo-input' }, label_html: { class: 'upload-photo'}, label: '📷 Upload a photo' %>
+      <%= image_tag "", width: 300, class: "hidden", id: "photo-preview" %>
+    </div>
     <%= f.input :policies, label: "Policies",  placeholder: "outlines the guidelines and requirements when booking this experience, whats included as well as the refund policy", :label_html => { :class => 'form_title' } %>
     <%= f.button :submit, "Add my Experience", class: "btn btn-warning btn-lg btn-block rounded-pill mb-5 shadow" %>
 <% end %>
