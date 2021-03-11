@@ -4,54 +4,24 @@
 </div>
 
 <div class="container">
-
   <div class="row my-3">
-
     <div class="col-8 align-items-start d-flex py-3 flex-column">
       <div class="py-3"><h3>A bit more about this experience...</h3></div>
-      <div><p><%= @experience.description %></p></div>
-      <div class="py-4">
-        <h3>Policies</h3>
-        <%= @experience.policies %>
-      </div>
-      <div class="py-4">
-        <h3>Location info</h3>
-        <h4>Meeting info</h4>
-        <%= @experience.meeting_point %>
-        <br><br><br>
-      </div>
-
+        <div><p><%= @experience.description %></p></div>
+          <div class="py-4">
+            <h3>Policies</h3>
+            <%= @experience.policies %>
+          </div>
+        <div class="py-4">
+          <h3>Location info</h3>
+          <h4>Meeting info</h4>
+          <%= @experience.meeting_point %>
+         <br><br><br>
+        
+        <div id="map" src='https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/2.3381,48.8693,10.45,0,0/600x1000?access_token=pk.eyJ1IjoicG9wcHlqZW5uaW5ncyIsImEiOiJja2xjZGdjdXIxZXJ1Mm9sYm0ycGRyNjJvIn0.L3m2Fuc9wxwHdOgZ6lLUkw' style="width: 100%; height: 50vh;" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
     </div>
 
-    <div class="col-4">
-      <form class="price-input">
-        <div class="my-0"><b>Price per person: € <%= @experience.price %> per day</b></div>
-        <div class="my-0"><b>Number of people: <%= @experience.max_guests %></b></div>
-        <div class="form-group">
-          <span class="input-group-addon" id="basic-addon1">From</span>
-          <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
-        </div>
-        <div class="form-group">
-          <span class="input-group-addon" id="basic-addon1">To</span>
-          <input type="date" class="form-control" placeholder="<%= @booking %>" aria-describedby="basic-addon1">
-        </div>
-        <div class="form-group">
-          <span class="input-group-addon" id="basic-addon1">Number of Guests (max. <%= @experience.max_guests %> )</span>
-          <input type="select" class="form-control" placeholder="<%= (1..@experience.max_guests) %>" aria-describedby="basic-addon1">
-        </div>
-        <input type="submit" value="Book Now" class="my-2 btn btn-warning block btn-block rounded-pill">
-
-        </form>
-      <div class="xp-booking-details">
-        <div class="my-1"><b>Price per person: € <%= @experience.price %> per day</b></div>
-        <div class="my-3"><b>Max Number of people: <%= @experience.max_guests %></b></div>
-         <%= render 'booking_form', experience: @experience %>
-      </div>
-
-      <div id="map" src='https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/2.3381,48.8693,10.45,0,0/600x1000?access_token=pk.eyJ1IjoicG9wcHlqZW5uaW5ncyIsImEiOiJja2xjZGdjdXIxZXJ1Mm9sYm0ycGRyNjJvIn0.L3m2Fuc9wxwHdOgZ6lLUkw' style="width: 100%; height: 50vh;" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-    </div>
-
-      <div class="cards-map">
+     <div class="cards-map">
         <div class="cards px-3">
           <% @experiences.each do |experience| %>
             <div class="card-trip">
@@ -67,6 +37,20 @@
             </div>
           <% end %>
         </div>
+      </div>
+
+    </div>
+
+    <div class="col-4">
+          <div class="xp-booking-details">
+            <div class="my-1"><b>Price per person: € <%= @experience.price %> per day</b></div>
+            <div class="my-3"><b>Max Number of people: <%= @experience.max_guests %></b></div>
+            <%= render 'booking_form', experience: @experience %>
+      </div>
+
+     
+
+     
 
     </div>
 
@@ -83,5 +67,3 @@
   </div>
 
 </div>
-
-
