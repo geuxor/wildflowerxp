@@ -30,6 +30,7 @@ import { initMapbox } from '../plugins/init_mapbox';
 // import { initSelect2 } from '../components/init_select2';
 import { initAutocomplete } from '../components/algolia_form';
 import { initFlatpickr } from "../plugins/flatpickr";
+import { previewImageOnFileSelect } from "../plugins/photo_preview";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -37,4 +38,5 @@ document.addEventListener('turbolinks:load', () => {
   initAutocomplete();
   initMapbox()
   initFlatpickr();
+  previewImageOnFileSelect();
 });
