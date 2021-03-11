@@ -11,7 +11,7 @@ class Booking < ApplicationRecord
 
   private
   def limit_max_guests
-    if experience.max_guests > nr_of_people
+    if experience.max_guests <= nr_of_people
       errors.add(:nr_of_people, "Please specify a nr. less than #{experience.max_guests}")
     end
   end

@@ -1,0 +1,17 @@
+<h1>Hi<%= current_user.first_name %></h1>
+
+<h2>Here is a list of the expereinces you host</h2>
+
+<ul>
+  <% @experiences.each do |experience| %>
+    <li><%= link_to experience.title, experience %></li>
+    <% end %>
+</ul>
+
+<h2>Here is a list of booking requests (for your experiences)</h2>
+
+<ul>
+  <% @my_booking_requests.each do |booking| %>
+    <li><%=  booking.experience.title %> - <%=  booking.status %></li>
+    <% end %>
+</ul>
