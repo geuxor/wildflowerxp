@@ -2,7 +2,6 @@
   <%= f.input :title, label: "Title", :label_html => { :class => 'form_title' } %>
   <%= f.input :description, label: "Description", :label_html => { :class => 'form_title' } %>
 
-  <form>
     <div class="row">
       <div class="col">
         <%= f.input :location, label: "Location", :label_html => { :class => 'form_title' } %>
@@ -12,9 +11,7 @@
         <p>more info about where to meet</p>
       </div>
     </div>
-  </form>
-  
-  <form>
+
     <div class="row">
       <div class="col">
         <%= f.input :activity,
@@ -33,8 +30,6 @@
             collection: Experience::ACTIVITY_EFFORTS %>
       </div>
     </div>
-  </form>
-  <form>
     <div class="row">
       <div class="col">
         <%= f.input :price, label: "Price", :label_html => { :class => 'form_title' }  %>
@@ -43,9 +38,15 @@
         <%= f.input :max_guests, label: "Max nr. of Guests", :label_html => { :class => 'form_title' } %>
       </div>
     </div>
-  </form>
+    <label class="btn btn-primary">
+      Upload your photos!
+      <span style="display:none;">
+        <%= f.input :photo, as: :file, required: true, multiple: true, :label_html => { :class => 'form_title' } %>
+      </span>
+    </label>
+    <%= f.input :policies, label: "Policies", :label_html => { :class => 'form_title' } %>
 
-  <%= f.input :photo, as: :file, :label_html => { :class => 'form_title' } %>
-  <%= f.input :policies, label: "Policies", :label_html => { :class => 'form_title' } %>
-  <%= f.submit "Add my Experience", class: 'btn btn-warning btn-lg btn-block mb-5' %>
+
+  
+  <%= f.button :submit, "Add my Experience", class: "btn btn-warning btn-lg btn-block rounded-pill mb-5" %>
 <% end %>
