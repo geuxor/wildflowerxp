@@ -1,0 +1,8 @@
+<h1>Bookings#new</h1>
+<p>FORM TO GO HERE!</p>
+
+<%= simple_form_for [@experience, @booking] do |f| %>
+  <p>Some details about the booking pulled in from elsewhere eg You are booking expereience: Fire breathing with Rafa, for 4 people on June 26</p>
+  <%=  %>
+  <%= f.submit "Request to book", class: "btn-primary btn" %>
+<% end %>

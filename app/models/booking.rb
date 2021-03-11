@@ -16,5 +16,4 @@ class Booking < ApplicationRecord
   def set_total_price
     self.total_price = experience.price * nr_of_people * duration
   end
-  
 end
