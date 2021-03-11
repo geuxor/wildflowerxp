@@ -1,6 +1,6 @@
 class Experience < ApplicationRecord
   DEFAULT_IMG = 'https://res.cloudinary.com/geuxor/image/upload/v1615381828/samples/sheep-closeup-eating-grass_bbalee.jpg'
-  ACTIVITIES = %w( Sport Culture Nature Animals Wild Danger )
+  ACTIVITIES = %w( Food Sport Culture Nature Animals Wild Danger )
   ACTIVITY_EFFORTS = (1..5)
   has_one_attached :photo
   belongs_to :user
