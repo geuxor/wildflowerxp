@@ -6,7 +6,7 @@ class Experience < ApplicationRecord
   belongs_to :user
   has_many :bookings
   has_many :reviews, through: :bookings
-  
+
   validates :title, :description, :location, :price, :activity, :max_guests, :meeting_point, :policies, :activity_effort, presence: true
   validates :price, :max_guests, numericality: true
   validates :activity, inclusion: { in: ACTIVITIES }
@@ -14,4 +14,10 @@ class Experience < ApplicationRecord
 
   geocoded_by :location
   after_validation :geocode, if: :will_save_change_to_location?
+  POLICY_ICON = {
+    "Pets are not allowed" => "fa-cat",
+    "No parties or events" => "fa-glass-cheers",
+    "Stick to the group" => "fa-user-friends",
+    "Smoking is not allowed”" => "fa-smoking-ban"
+  }
 end
