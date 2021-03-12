@@ -9,9 +9,9 @@
 <div class="container">
   <div class="row my-3">
     <div class="col-8 align-items-start d-flex py-3 flex-column">
-      <h3 class="mb-3">Discover more about <%= @experience.activity %></h3>
+      <h3 class="mb-3">Discover more about <%= @experience.title %></h3>
         <p><%= @experience.description %></p>
-      <h3 class="my-3">Policies</h3>
+      <h3 class="my-3">Experience Policies</h3>
       <ul>
         <% @experience.policies.split(".").each do |policy| %>
         <li class="d-flex align-items-center mb-3">

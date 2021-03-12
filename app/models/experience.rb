@@ -3,10 +3,10 @@ class Experience < ApplicationRecord
   ACTIVITIES = %w( Nature Sport Animals Wild Danger Culture )
   ACTIVITY_EFFORTS = (1..5)
   POLICY_ICON = {
-    "Pets are not allowed" => "fa-cat",
+    "No pets" => "fa-cat",
     "No parties or events" => "fa-glass-cheers",
     "Stick to the group" => "fa-user-friends",
-    "Smoking is not allowed”" => "fa-smoking-ban"
+    "No smoking" => "fa-smoking-ban"
   }
   has_one_attached :photo
   belongs_to :user
