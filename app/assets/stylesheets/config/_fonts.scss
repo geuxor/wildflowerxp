@@ -19,5 +19,7 @@ $headers-font: "Blinker", "sans-serif";
 // $my-font: "Font Name";
 @font-face {
     font-family: "Wildflower";
-    src: url(./fonts/wildflower.ttf) format('truetype');
+    //src: url(././fonts/wildflower.ttf) format('truetype');
+    src: asset-url("wildflower.ttf") format('truetype');
+
 }
