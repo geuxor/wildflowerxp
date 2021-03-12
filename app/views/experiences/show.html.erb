@@ -18,19 +18,20 @@
           <i class="mr-3 fas <%= Experience::POLICY_ICON[policy.strip] %>"></i>
           <p class="mb-0"><%= policy %></p>
         </li>
-
         <% end %>
       </ul>
     </div>
 
     <div class="col-4">
-      <form class="price-input">
+
+      <div class="price-input">
         <p class="font-weight-bold book-style">Price per person: € <%= @experience.price %> per day</p>
         <p class="font-weight-bold book-style">Max Number of people: <%= @experience.max_guests %></p>
         <div class="mt-3">
            <%= render 'booking_form', experience: @experience %>
         </div>
-      </form>
+      </div>
+
     </div>
 
     <div class="col-12">
@@ -44,25 +45,27 @@
     <h3 class="my-4 mt-3">More about <%= @experience.activity %></h3>
       <div class="cards-map">
 
-      <div class="cards-show">
-        <% @experiences.first(3).each do |experience| %>
-          <div class="card-trip">
-            <%= cl_image_tag experience.photo.key %>
-            <div class="card-trip-infos">
-              <div>
-                <h2><%= link_to experience.title, experience %></h2>
-                <p>Short description here! <%= experience.description.slice(0..30) %></p>
+        <div class="cards-show">
+          <% @experiences.first(3).each do |experience| %>
+            <div class="card-trip">
+              <%= cl_image_tag experience.photo.key %>
+              <div class="card-trip-infos">
+                <div>
+                  <h2><%= link_to experience.title, experience %></h2>
+                  <p>Short description here! <%= experience.description.slice(0..30) %></p>
+                </div>
+                <p class="card-trip-pricing">€<%= experience.price %></p>
               </div>
-              <p class="card-trip-pricing">€<%= experience.price %></p>
             </div>
-          </div>
-        <% end %>
-      </div>
+          <% end %>
+        </div>
 
       </div>
-    </div>
-  </div>
+   </div>
+
 
   </div>
+
+
 
 </div>

@@ -1,7 +1,7 @@
 <div class="form-wrapper" style="width: 300px;">
 
 
-      <form class="price-input">
+      <div class="price-input">
         <%= simple_form_for [@experience, @booking] do |f| %>
           <%= f.input :nr_of_people, label: "No of guests (max. #{@experience.max_guests})", input_html: { min: 1, max: @experience.max_guests } %>
           <%= f.input :start_date, as: :string, input_html: {class: "datepicker"} %>
@@ -10,7 +10,7 @@
           <%= f.button :submit, "Book Now", class: "my-2 btn btn-warning block btn-block rounded-pill" %>
         <% end %>
 
-      </form>
+      </div>
 
   </div>
 

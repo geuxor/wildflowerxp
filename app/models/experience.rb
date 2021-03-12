@@ -1,7 +1,13 @@
 class Experience < ApplicationRecord
   DEFAULT_IMG = 'https://res.cloudinary.com/geuxor/image/upload/v1615381828/samples/sheep-closeup-eating-grass_bbalee.jpg'
-  ACTIVITIES = %w( Food Sport Culture Nature Animals Wild Danger )
+  ACTIVITIES = %w( Nature Sport Animals Wild Danger Culture )
   ACTIVITY_EFFORTS = (1..5)
+  POLICY_ICON = {
+    "Pets are not allowed" => "fa-cat",
+    "No parties or events" => "fa-glass-cheers",
+    "Stick to the group" => "fa-user-friends",
+    "Smoking is not allowed”" => "fa-smoking-ban"
+  }
   has_one_attached :photo
   belongs_to :user
   has_many :bookings
@@ -14,10 +20,4 @@ class Experience < ApplicationRecord
 
   geocoded_by :location
   after_validation :geocode, if: :will_save_change_to_location?
-  POLICY_ICON = {
-    "Pets are not allowed" => "fa-cat",
-    "No parties or events" => "fa-glass-cheers",
-    "Stick to the group" => "fa-user-friends",
-    "Smoking is not allowed”" => "fa-smoking-ban"
-  }
 end
