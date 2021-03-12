@@ -1,17 +1,30 @@
-<h1>Hi<%= current_user.first_name %></h1>
+<div class="banner-small" style="background-image: url(https://images.unsplash.com/photo-1523287281576-5b596107a6ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);">
+  <div class="banner-content">
+    <h1>Hi <%= current_user.first_name %>!</h1>
+    <h2>Here are your experiences and bookings</h2>
+  </div>
+</div>
 
-<h2>Here is a list of the expereinces you host</h2>
+<div class="container pt-3">
+  <h2>Experiences you host</h2>
+  <ul>
+    <% @experiences.each do |experience| %>
+      <li><%= link_to experience.title, experience %></li>
+      <% end %>
+  </ul>
 
-<ul>
-  <% @experiences.each do |experience| %>
-    <li><%= link_to experience.title, experience %></li>
-    <% end %>
-</ul>
+  <h2>Booking requests (for experiences that you host)</h2>
+  <ul>
+    <% @my_booking_requests.each do |booking| %>
+      <li><%=  booking.experience.title %> - <%=  booking.status %></li> 
+      <li><a href="/booking">Accept this booking</a> || <a href="#">Reject this booking</a></li>
+      <% end %>
+  </ul>
 
-<h2>Here is a list of booking requests (for your experiences)</h2>
-
-<ul>
-  <% @my_booking_requests.each do |booking| %>
-    <li><%=  booking.experience.title %> - <%=  booking.status %></li>
-    <% end %>
-</ul>
+  <h2>Experiences you have requested to book</h2>
+    <ul>
+      <% @my_experience_requests.each do |booking| %>
+        <li><%=  booking.experience.title %> - <%=  booking.status %></li>
+        <% end %>
+    </ul>
+</div>
