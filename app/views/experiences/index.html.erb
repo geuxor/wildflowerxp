@@ -9,7 +9,6 @@
     <% if params[:activity].present? %>
       <input type="hidden" id="activity" name="activity" value="<%=params[:activity]%>">
    <% end %>
-    
     <label for="location">Location</label>
     <input id="location" type="text" name="location" placeholder="Where?">
     <label for="start_date">Start date</label>
@@ -17,57 +16,50 @@
     <label for="end_date">End date</label>
     <input id="end_date" type="text" name="end_date" placeholder="<%= (Date.today + 3).strftime('%F') %>">
     <button class="btn search" type="submit">
-                <i class="fa fa-search"></i>
-            </button>
-
+    <i class="fa fa-search"></i>
+    </button>
   </form>
 
-<div class="cards-map">
-  <div class="cards px-3">
-    <% @experiences.each do |experience| %>
-      <div class="card-trip">
+  <% if params[:activity].present? %>
+    <div class="filter">
+      <h2><%= params[:activity].upcase %></h2>
+    </div>
+  <% end %>
+  
+  <% if params[:location].present? %>
+    <div class="filter">
+      <h2>Experiences in <%= params[:location].capitalize %></h2>
+    </div>
+  <% end %>
 
-        <% if experience.photo.attached? %>
-          <%= cl_image_tag experience.photo.key %>
-        <% else %>
-          <%= cl_image_tag 'https://res.cloudinary.com/geuxor/image/upload/v1615476947/Broken-glass_dcb4ee.jpg', height: 300, width: 400, crop: :fill %>
-        <% end %>
+  
+</div>
 
-      <% if params[:activity].present? %>
-        <div class="filter">
-          <h2><%= params[:activity].upcase %></h2>
-        </div>
-      <% end %>
-      <% if params[:location].present? %>
-        <div class="filter">
-          <h2>Experiences in <%= params[:location].capitalize %></h2>
-        </div>
-      <% end %>
-
-      <% if @experiences.empty? %>
-        <div class="filter">
-          <h2>No experiences founded with that criteria</h2>
-        </div>
-      <% else %>
-        <div class="cards-map">
-          <div class="cards px-3">
-            <% @experiences.each do |experience| %>
-              <div class="card-trip">
-                <%= cl_image_tag experience.photo.key %>
-
-                <div class="card-trip-infos">
-                  <div>
-                    <h2><%= link_to experience.title, experience %></h2>
-                    <p>Short description here! <%= experience.description.slice(0..30) %></p>
-                  </div>
-                  <p class="card-trip-pricing">€<%= experience.price %></p>
-                </div>
-              </div>
-            <% end %>
-          </div>
-        <% end %>
-      </div>
-     <% end %>
-
-  <div id="map" class="position-sticky" src='https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/2.3381,48.8693,10.45,0,0/600x1000?access_token=pk.eyJ1IjoicG9wcHlqZW5uaW5ncyIsImEiOiJja2xjZGdjdXIxZXJ1Mm9sYm0ycGRyNjJvIn0.L3m2Fuc9wxwHdOgZ6lLUkw' style="width: 100%; height: 100vh;" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+<% if @experiences.empty? %>
+  <div class="filter">
+    <h2>No experiences founded with that criteria</h2>
   </div>
+<% else %>
+  <div class="cards-map">
+    <div class="cards px-3">
+      <% @experiences.each do |experience| %>
+        <div class="card-trip">
+          <%= cl_image_tag experience.photo.key %>
+
+          <div class="card-trip-infos">
+            <div>
+              <h2><%= link_to experience.title, experience %></h2>
+              <p>Short description here! <%= experience.description.slice(0..30) %></p>
+            </div>
+            <p class="card-trip-pricing">€<%= experience.price %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div id="map" class="position-sticky" src='https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/2.3381,48.8693,10.45,0,0/600x1000?access_token=pk.eyJ1IjoicG9wcHlqZW5uaW5ncyIsImEiOiJja2xjZGdjdXIxZXJ1Mm9sYm0ycGRyNjJvIn0.L3m2Fuc9wxwHdOgZ6lLUkw' style="width: 100%; height: 100vh;" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+  </div>
+<% end %>
+
+
+
+
