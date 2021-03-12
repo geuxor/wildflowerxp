@@ -27,7 +27,7 @@ exp1.save!
 file2 = URI.open('https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500')
 exp2 = Experience.new(
 title: "Cute dolphins observation",
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+description: "One fin, then two, then three… What a delight to see the bottlenose dolphins gliding through the Breton water!",
 location: "Passeig de Garcia Fària, Diagonal Mar i el Front Marítim del Poblenou, Sant Martí, Barcelona, Barcelonés, Barcelona, Cataluña, 08001, España",
 price: 120,
  activity: "Nature",
