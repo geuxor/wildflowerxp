@@ -170,7 +170,7 @@ exp13.save!
 file8 = URI.open('https://res.cloudinary.com/geuxor/image/upload/v1615536744/k5cpdz67gevnlpl5fckv9r3iy3aq.jpg')
 exp8 = Experience.new(
 title: "Crocodile Fishing",
-description: "A new trend amongst wildflower enthusiasts. Leap from a high platform and start the action. As you jump and reach the top of the water, crocodile lunges at you with great hunger. Bring your kids and have the adventure of your life",
+description: "A new trend amongst the many wildflower enthusiasts. Leap from a high platform and start the action. As you jump and reach the top of the water, crocodile lunges at you with great hunger. Bring your kids and have the adventure of your life",
 location: "Macau Eiffel Tower, People's Republic of China",
 price: 69,
  activity: "Sport",
@@ -247,7 +247,7 @@ price: 49,
 exp20.photo.attach(io: file20, filename: 'indian_cuisine.jpeg', content_type: 'image/jpeg')
 exp20.save!
 
-file21 = URI.open('https://res.cloudinary.com/geuxor/image/upload/v1615547050/mountain_alcohol_pnjkay.jpg')
+file21 = URI.open('https://res.cloudinary.com/geuxor/image/upload/v1615550449/tvx7n2eztwg9ck8miqm1morbaqgb.jpg')
 exp21 = Experience.new(
 title: "French Mountain Drinking",
 description: "Consuming alcohol is more of a vice than virtue when it comes to mountains and especially at high altitudes. Getting high by such resorts might seem to be a good way to bury your worries and enjoy your life. But believe me, you would be making it even worse. You shouldn’t consume alcohol while on the trek.",
