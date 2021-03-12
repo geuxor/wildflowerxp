@@ -8,6 +8,8 @@ class PagesController < ApplicationController
   def dashboard
     # want to show all experiences of the current user
     @experiences = current_user.experiences
-    @my_booking_requests = Booking.all.select{ |booking| booking.experience.user == current_user }
+    @my_booking_requests = Booking.all.select { |booking| booking.experience.user == current_user }
+
+    @my_experience_requests = current_user.bookings
   end
 end

@@ -27,13 +27,13 @@
     </div>
 
     <div class="col-4">
-      <form class="price-input">
+      <div class="price-input">
         <p class="font-italic font-weight-bold">Price per person: € <%= @experience.price %> per day</p>
         <p class="font-italic font-weight-bold">Max Number of people: <%= @experience.max_guests %></p>
         <div class="mt-3 mr-5">
            <%= render 'booking_form', experience: @experience %>
         </div>
-      </form>
+      </div>
     </div>
 
     <div>
