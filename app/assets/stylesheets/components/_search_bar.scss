@@ -1,23 +1,28 @@
 .search-input {
   background-color: white;
-  padding: 15px 21px;
-    border-radius: 49px;
+  padding: 1px 0 0 32px;
+  border-radius: 50px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
 }
 
 .search-input label {
   color: black;
+  padding-right: 10px;
 }
 
 .search-input input {
   border: none;
+  width: 16%;
 }
 
 .btn.search {
   height: 50px;
   width: 50px;
-  border-radius: 50%;
-  border: 1px solid red;
-  background: red;
+  border-radius: 49%;
+  border: 1px solid rgb(87, 87, 87);
+  background: rgba(146, 42, 16, 0.931);
   font-family: "Font Awesome 5 Free";
   color: white;
 }
@@ -30,6 +35,11 @@
   border-radius: 15px;
 }
 .col-8 h3 {
-  font-family: Circular, sans-serif;
+  font-family: 'Blinker', sans-serif;
   font-size: 20px;
+}
+
+label {
+
+  margin-bottom: 0;
 }
