@@ -26,8 +26,8 @@ exp1.save!
 
 file2 = URI.open('https://res.cloudinary.com/geuxor/image/upload/v1615488115/Creeking-sundancekayak_hhtywv.jpg')
 exp2 = Experience.new(
-title: "Kayak Creeking",
-description: "Creeking is one of the most dangerous sports there is, but of course this also makes it one of the most exhilarating. It is similar to canoeing and kayaking, but Creeking involves descending steep low-volume white-water that includes waterfalls, slides and unexplored canyons. This means that it has to be performed in specially made canoes and extra gear is needed to ensure that people are kept as safe as possible. There are all kinds of unique hazards attached to Creeking, including sieves (where the paddler gets stuck underwater), chicken heads (rock sticking out of slides) and of course waterfalls where the landing is key. This is certainly not one for the faint of heart.",
+title: "Cute dolphins observation",
+description: "One fin, then two, then three… What a delight to see the bottlenose dolphins gliding through the Breton water!",
 location: "Passeig de Garcia Fària, Diagonal Mar i el Front Marítim del Poblenou, Sant Martí, Barcelona, Barcelonés, Barcelona, Cataluña, 08001, España",
 price: 120,
  activity: "Nature",
