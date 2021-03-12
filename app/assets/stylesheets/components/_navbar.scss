@@ -1,19 +1,55 @@
 .navbar-lewagon {
+  color: rgb(0, 0, 0);
   justify-content: space-between;
   width: 100%;
   position: absolute;
   margin-top: 0;
   z-index: 10;
+  // position: sticky;
+  // top: 0;
+  background-color: rgba(82, 82, 82, 0.151);
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+    color: rgb(255, 255, 255);
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  box-shadow: 3px 3px 10px black;
+  color: rgb(255, 255, 255);
 }
 
 .navbar-text {
+  font-family: "Wildflower", "sans-serif";
   display: inline;
+  text-shadow: 2px 2px 16px rgb(0, 0, 0);
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 10px black;
+}
+
+.navbar-text:hover, {
+  color: rgba(146, 42, 16, 0.931);
+  text-shadow: 3px 3px 16px rgb(255, 255, 255);
+}
+
+.navbar i {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.829);
+  text-shadow: 2px 3px 16px rgba(77, 77, 77, 0.945);
+}
+
+.navbar i:hover{
+  color: rgba(19, 132, 177, 0.829);
+}
+
+.nav-link, .nav-item {
+  color: black;
+  text-shadow: 2px 2px 16px rgb(255, 255, 255);
+}
+
+.nav-link:hover, .nav-item:hover {
+  color: rgba(146, 42, 16, 0.931);
+  text-shadow: 3px 3px 16px rgb(255, 255, 255);
 }

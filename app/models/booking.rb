@@ -8,11 +8,19 @@ class Booking < ApplicationRecord
   enum status: [:pending, :accepted, :declined]
 
   validate :limit_max_guests
+  validate :check_start_end_date
 
   private
+
   def limit_max_guests
     if experience.max_guests <= nr_of_people
-      errors.add(:nr_of_people, "Please specify a nr. less than #{experience.max_guests}")
+      errors.add(:nr_of_people, "#{nr_of_people}, needs to be less than #{experience.max_guests}")
+    end
+  end
+
+  def check_start_end_date
+    if start_date > end_date
+      errors.add(:end_date, " needs to be after #{start_date}")
     end
   end
 
