@@ -32,7 +32,7 @@ price: 120,
 activity: "Nature",
 max_guests: 4,
 meeting_point: "Passeig de Garcia Fària, Diagonal Mar i el Front Marítim del Poblenou, Sant Martí, Barcelona, Barcelonés, Barcelona, Cataluña, 08001, España",
-policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
 activity_effort: 3,
 user: user2
 )
@@ -48,7 +48,7 @@ price: 69,
  activity: "Wild",
  max_guests: 4,
  meeting_point: "Carretera d'Horta a Cerdanyola, Can Valldaura, Cerdanyola del Vallés, Vallés Occidental, Barcelona, Cataluña, 08193, España",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -64,7 +64,7 @@ price: 69,
  activity: "Nature",
  max_guests: 4,
  meeting_point: "Carretera d'Horta a Cerdanyola, Can Valldaura, Cerdanyola del Vallés, Vallés Occidental, Barcelona, Cataluña, 08193, España",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -80,7 +80,7 @@ price: 50,
  activity: "Nature",
  max_guests: 4,
  meeting_point: "Carretera de Sant Cugat a Barcelona, Sol-i-Aire, Can Vasconcel, Sant Cugat del Vallès, Vallés Occidental, Barcelona, Cataluña, 08196, España",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user2
 )
@@ -96,7 +96,7 @@ price: 35,
  activity: "Nature",
  max_guests: 4,
  meeting_point: "Can Calopa de Dalt, Vallvidrera, el Tibidabo i les Planes, Sarrià - Sant Gervasi, Barcelona, Barcelonés, Barcelona, Cataluña, 08001, España",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -112,7 +112,7 @@ price: 49,
  activity: "Sport",
  max_guests: 4,
  meeting_point: "Cadiz Street 32, Andalucía, Spain",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user2
 )
@@ -128,7 +128,7 @@ price: 19,
  activity: "Sport",
  max_guests: 4,
  meeting_point: "Carrer d'Aragó, la Dreta de l'Eixample, Eixample, Barcelona, Barcelonés, Barcelona, Cataluña, 08001, España",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user2
 )
@@ -144,7 +144,7 @@ price: 120,
  activity: "Sport",
  max_guests: 4,
  meeting_point: "Avinguda de Madrid, les Corts, Barcelona, Barcelonés, Barcelona, Cataluña, 08001, España",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user2
 )
@@ -160,7 +160,7 @@ price: 69,
  activity: "Wild",
  max_guests: 4,
  meeting_point: "el Poble-sec, Font Trobada, Sants-Montjuïc, Barcelona, Barcelonés, Barcelona, Cataluña, 08001, España",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -176,7 +176,7 @@ price: 69,
  activity: "Sport",
  max_guests: 4,
  meeting_point: "el Poble-sec, Font Trobada, Sants-Montjuïc, Barcelona, Barcelonés, Barcelona, Cataluña, 08001, España",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -192,7 +192,7 @@ price: 50,
  activity: "Sport",
  max_guests: 4,
  meeting_point: "Tjæreborg Mountainbikespor, Tjæreborg, Region Syddanmark, Denmark",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -208,7 +208,7 @@ price: 35,
  activity: "Danger",
  max_guests: 4,
  meeting_point: "Hafnarfjordur, Höfuðborgarsvæðið, Iceland",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -224,7 +224,7 @@ price: 39,
  activity: "Wild",
  max_guests: 4,
  meeting_point: "Passeig de Colom, Gothic Quarter, Ciutat Vella, Barcelona, Barcelonés, Barcelona, Cataluña, 08001, España",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user2
 )
@@ -240,7 +240,7 @@ price: 49,
  activity: "Wild",
  max_guests: 4,
  meeting_point: "Pamplona, Navarra - Nafarroa, Spain",
- policies: "Lorem ipsum dolor sit amet, dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -256,7 +256,7 @@ price: 49,
 activity: "Nature",
 max_guests: 4,
 meeting_point: "20 Rue de la Société Vinicole, 16100 Cognac, France",
-policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
 activity_effort: 3,
 user: user2
 )
@@ -272,7 +272,7 @@ price: 49,
  activity: "Wild",
  max_guests: 4,
  meeting_point: "31680 Larrau, France",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user2
 )
@@ -288,7 +288,7 @@ price: 49,
  activity: "Sport",
  max_guests: 4,
  meeting_point: "31680 Larrau, France",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user2
 )
@@ -304,7 +304,7 @@ price: 49,
  activity: "Animals",
  max_guests: 4,
  meeting_point: "Passeig de Colom, Gothic Quarter, Ciutat Vella, Barcelona, Barcelonés, Barcelona, Cataluña, 08001, España",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -320,7 +320,7 @@ price: 49,
  activity: "Animals",
  max_guests: 4,
  meeting_point: "Headland Sada, Vasco da Gama, Goa 403804, India",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -336,7 +336,7 @@ price: 49,
  activity: "Animals",
  max_guests: 4,
  meeting_point: "Isla Mujeres, Quintana Roo, Mexico",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -352,7 +352,7 @@ price: 49,
  activity: "Animals",
  max_guests: 4,
  meeting_point: "Oahu Avenue, Honolulu, Hawaii, United States of America",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -368,7 +368,7 @@ price: 49,
  activity: "Animals",
  max_guests: 4,
  meeting_point: "Moscow Airport, Москва, Russia",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user2
 )
@@ -384,7 +384,7 @@ price: 49,
  activity: "Animals",
  max_guests: 4,
  meeting_point: "Savana, Vatovavy Fitovinany, Madagascar",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -400,7 +400,7 @@ price: 49,
  activity: "Danger",
  max_guests: 4,
  meeting_point: "Shenley Rd, Ashford TN27 9JD, United Kingdom",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -416,7 +416,7 @@ price: 49,
  activity: "Danger",
  max_guests: 4,
  meeting_point: "Volcano Village, Hawaii, United States of America",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user2
 )
@@ -432,7 +432,7 @@ price: 49,
  activity: "Danger",
  max_guests: 4,
  meeting_point: "40°36'49.3N - 14°33'14.1E",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user2
 )
@@ -448,7 +448,7 @@ price: 49,
  activity: "Danger",
  max_guests: 4,
  meeting_point: "Passeig de Colom, Gothic Quarter, Ciutat Vella, Barcelona, Barcelonés, Barcelona, Cataluña, 08001, España",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user1
 )
@@ -464,7 +464,7 @@ price: 49,
  activity: "Wild",
  max_guests: 4,
  meeting_point: "Cerro de los Muertos, Veracruz, Mexico",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user2
 )
@@ -480,7 +480,7 @@ price: 49,
  activity: "Danger",
  max_guests: 4,
  meeting_point: "A.F. Kriegers Vej 23, Copenhagen, Region Hovedstaden, Denmark",
- policies: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+ policies: "No pets. No parties or events. Stick to the group. No smoking",
  activity_effort: 3,
  user: user2
 )
