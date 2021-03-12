@@ -1,15 +1,20 @@
 .search-input {
   background-color: white;
-  padding: 1px 0 0 32px;
+  padding: 0 0 0 32px;
   border-radius: 50px;
   display: flex;
   justify-content:space-between;
   align-items: center;
+  height: 50px;
+  max-width: 780px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 8px #00000012;
 }
 
 .search-input label {
   color: black;
   padding-right: 10px;
+  margin-bottom: 0;
 }
 
 .search-input input {
@@ -17,11 +22,15 @@
   width: 16%;
 }
 
+.search-input input:focus {
+  outline: none;
+}
+
 .btn.search {
-  height: 50px;
-  width: 50px;
+  height: 47px;
+  width: 47px;
+  transform: translateX(-2px);
   border-radius: 49%;
-  border: 1px solid rgb(87, 87, 87);
   background: rgba(146, 42, 16, 0.931);
   font-family: "Font Awesome 5 Free";
   color: white;
