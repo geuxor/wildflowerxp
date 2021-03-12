@@ -219,7 +219,7 @@ file18 = URI.open('https://res.cloudinary.com/geuxor/image/upload/v1615488124/ea
 exp18 = Experience.new(
 title: "Eating Fire with Rafa",
 description: "Fire eating is the act of putting a flaming object into the mouth and extinguishing it. A fire eater can be an entertainer, a street performer, part of a sideshow or a circus act but has also been part of spiritual tradition in India.",
-location: "Vinkelstien 5, Landerslev Strand, Region Hovedstaden, Denmark",
+location: "Vinkelstien 1, Landerslev Strand, Region Hovedstaden, Denmark",
 price: 39,
  activity: "Wild",
  max_guests: 4,
