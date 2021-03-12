@@ -17,7 +17,9 @@
   <ul>
     <% @my_booking_requests.each do |booking| %>
       <li><%=  booking.experience.title %> - <%=  booking.status %></li> 
-      <li><a href="/booking">Accept this booking</a> || <a href="#">Reject this booking</a></li>
+       
+      <%= link_to "Accept",  booking_path(booking, booking: {status: "accepted"}), method: :patch  %> || 
+      <%= link_to "Decline",  booking_path(booking, booking: {status: "declined"}), method: :patch  %>
       <% end %>
   </ul>
 
