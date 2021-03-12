@@ -44,7 +44,7 @@ class ExperiencesController < ApplicationController
   def search_experiences
     experiences = Experience.all
     experiences = experiences.where(activity: params[:activity]) if params[:activity].present?
-    experiences = experiences.near(params[:location], 10) if params[:location].present?
+    experiences = experiences.near(params[:location], 100) if params[:location].present?
     experiences = without_bookings(experiences) if params[:start_date].present? && params[:end_date].present?
     experiences
   end
