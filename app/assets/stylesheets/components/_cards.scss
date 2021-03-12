@@ -6,8 +6,19 @@
   // padding: 16px;
   margin-bottom: 30px;
   flex-grow: 1;
+  // max-width: 65vw;
+}
+
+.cards-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  // padding: 16px;
+  margin-bottom: 30px;
+  flex-grow: 1;
   max-width: 65vw;
 }
+
 .card-category {
   height: 250px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
