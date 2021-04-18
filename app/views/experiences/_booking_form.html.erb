@@ -1,16 +1,18 @@
 <div class="form-wrapper" style="width: 300px;">
 
-
       <div class="price-input">
         <%= simple_form_for [@experience, @booking] do |f| %>
-          <%= f.input :nr_of_people, label: "No of guests (max. #{@experience.max_guests})", input_html: { min: 1, max: @experience.max_guests } %>
+          <%= f.label :nr_of_people, label: "Select nr. of guests", input_html: { min: 1, max: @experience.max_guests } %>
+          <div class="actions">
+            <a class="btn round-bordered incrementer minus" data-offset="-1">-</a>
+            <span id="counter" data-count="1">1</span>
+            <a href="#" class="btn round-bordered incrementer" data-offset="1">+</a>
+          </div>
           <%= f.input :start_date, as: :string, input_html: {class: "datepicker"} %>
           <%= f.input :end_date, as: :string, required: false, input_html: {class: "datepicker"} %>
-          <p>Total price</p>
+          <div id="ttl_price">Total price:<%= @experience.price %>€</div>
           <%= f.button :submit, "Book Now", class: "my-2 btn btn-warning block btn-block rounded-pill" %>
         <% end %>
-
       </div>
 
   </div>
-

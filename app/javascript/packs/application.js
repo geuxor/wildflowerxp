@@ -31,12 +31,14 @@ import { initMapbox } from '../plugins/init_mapbox';
 import { initAutocomplete } from '../components/algolia_form';
 import { initFlatpickr } from "../plugins/flatpickr";
 import { previewImageOnFileSelect } from "../plugins/photo_preview";
+import { loadSelector } from "../components/booking_form";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   initAutocomplete();
-  initMapbox()
+  initMapbox();
   initFlatpickr();
   previewImageOnFileSelect();
+  loadSelector();
 });
