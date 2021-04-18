@@ -7,7 +7,6 @@ const updateCounter = (counter, count) => {
 const updateInput = (priceCents) => {
   const input = document.getElementById('price-input');
   input.value = priceCents;
-
 };
 
 const updateCTA = (priceCents) => {

@@ -23,16 +23,13 @@
     </div>
 
     <div class="col-4">
-
       <div class="price-input">
-
         <div class="big-bold" id="price" data-amount-cents="<%= @experience.price * 100%>">
           <p class="font-weight-bold book-style">Price per person: €<%= @experience.price %> per day</p> 
         </div>
         <p class="font-weight-bold book-style">Max Number of people: <span id="maxguests"><%= @experience.max_guests %></span></p>
            <%= render 'booking_form', experience: @experience %>
       </div>
-
     </div>
 
     <div class="col-12">
